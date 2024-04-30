@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player player1 active">
+            <div>
+                <p>player 1</p>
+                <p class="total">0</p>
+            </div>
+            <p class="print_winner"></p>
+            <button class="btn">current <p class="current">0</p></button>
+        </div>
+        <div class="controle">
+            <button class="restgame btn_control" disabled>🔁 new game</button>
+            <div><img class="drow" src ="/img/dice.png" alt="" srcset="" width="30%"></div>
+            <div class="flex">
+                <button class="rollDice btn_control">🎲 roll dice</button>
+                <button class="hold btn_control">📥 hold</button>
+            </div>
+        </div>
+        <div class="player player2">
+            <div>
+                <p>player 2</p>
+                <p class="total">0</p>
+            </div>
+            <p class="print_winner"></p>
+            <button class="btn">current <p class="current">0</p></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
