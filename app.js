@@ -17,7 +17,7 @@ let random;
 restgame.addEventListener('click', function () {
     restgame.setAttribute('disabled', true);
     let r = contactive();
-    drow.src = '/img/dice.png';
+    drow.src = 'dice.png';
     current[r].innerHTML = 0;
     player[0].classList.add('active');
     player[1].classList.remove('active');
@@ -61,12 +61,12 @@ function contactive() {
 function currentrandom(x, rad) {
     current[x].innerHTML = +current[x].innerHTML + +rad;
     //drow.src = `img/dice-1.png`;
-    drow.src = `img/dice-${rad}.png`;
+    drow.src = `dice-${rad}.png`;
 
 }
 // chaeck if number random is equal 1
 function check(rad) {
-    if (rad == 1) drow.src = `img/dice-${rad}.png`;
+    if (rad == 1) drow.src = `dice-${rad}.png`;
     for (let i in player) {
         player[i].classList.toggle("active");
         current[i].innerHTML = 0;
